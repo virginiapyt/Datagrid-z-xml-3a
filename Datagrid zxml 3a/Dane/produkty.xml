@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Listaproduktow>
+	<Produkt>
+		<Symbol>aaa</Symbol>
+		<Nazwa>komputer</Nazwa>
+		<LiczbaSztuk>50</LiczbaSztuk>
+		<Magazyn>Katowice_m1</Magazyn>
+	</Produkt>
+	<Produkt>
+		<Symbol>aaa</Symbol>
+		<Nazwa>Monitor</Nazwa>
+		<LiczbaSztuk>10</LiczbaSztuk>
+		<Magazyn>Katowice_m1</Magazyn>
+	</Produkt>
+	<Produkt>
+		<Symbol>bbb</Symbol>
+		<Nazwa>Myszka</Nazwa>
+		<LiczbaSztuk>600</LiczbaSztuk>
+		<Magazyn>Katowice_m1</Magazyn>
+	</Produkt>
+	
+	
+	
+	
+</Listaproduktow>

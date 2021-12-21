@@ -1,0 +1,31 @@
+﻿<Window x:Class="Datagrid_zxml_3a.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datagrid_zxml_3a"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <DataGrid x:Name="gridprodukty" ItemsSource="{Binding Path=Elements[Produkt]}"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Symbool" Binding="{Binding Element[Symbol].Value}"/>
+                <DataGridTextColumn Header="Nazwa" Binding="{Binding Element[Nazwa].Value}"/>
+                <DataGridTextColumn Header="Liczba sztuk" Binding="{Binding Element[LiczbaSztuk].Value}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                            <Setter Property="Foreground" Value="red"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+
+                </DataGridTextColumn>
+
+
+                <DataGridComboBoxColumn x:Name="kombo"  Header="Magazyn" 
+                                        SelectedItemBinding="{Binding Element[Magazyn].value}"/>
+                </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>
